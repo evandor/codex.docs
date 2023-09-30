@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GT2GZ4KGG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5GT2GZ4KGG');
+</script>
+
     <title>{{ (page.title ?: config.title) | striptags }}</title>
     <link rel="stylesheet" href="/dist/main.css" />
     <meta property="og:type" content="article" />
