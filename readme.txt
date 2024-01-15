@@ -18,4 +18,8 @@ docker-compose up -d
 git tag -a v0.0.5 -m "my version v0.0.5"
 git push origin --tags
 
-push
+### upgrade
+
+docker-compose down (with old version)
+
+in <india032>/docker/codex-docs, check docker-compose.yml and update version
