@@ -15,7 +15,7 @@ docker-compose up -d
 
 ## creating release
 
-git tag -a v0.0.5 -m "my version v0.0.5"
+git tag -a v0.0.11 -m "my version v0.0.11"
 git push origin --tags
 
 ### upgrade
