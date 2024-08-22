@@ -4,7 +4,7 @@ import csrf from 'csurf';
 import appConfig from '../utils/appConfig.js';
 
 const router = express.Router();
-const csrfProtection = csrf({ cookie: true });
+const csrfProtection = csrf({ cookie: {sameSite: 'none'} });
 const parseForm = express.urlencoded({ extended: false });
 
 /**

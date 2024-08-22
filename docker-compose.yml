@@ -1,9 +1,12 @@
 version: "3.2"
 services:
   docs:
-    image: ghcr.io/codex-team/codex.docs:v2.0.0-rc.8
+    image: ghcr.io/codex-team/codex.docs:v2.2.3
+#    image: ghcr.io/evandor/codex.docs:v0.0.13
     ports:
       - "3000:3000"
+#    environment:
+#      - APP_CONFIG_auth_password=qEz
     volumes:
       - ./uploads:/usr/src/app/uploads
       - ./db:/usr/src/app/db
